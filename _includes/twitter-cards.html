@@ -8,11 +8,16 @@
 {% else %}
         <meta name="twitter:card" content="summary">
     {% if page.image_lg %}
-        <meta name="twitter:image" content="/{{page.image_lg}}?w=120">
+        <meta name="twitter:image" content="{{page.image_lg}}?w=120">
     {% endif %}
 {% endif %}
         <meta name="twitter:site" content="@rewiredimagine">
         <meta name="twitter:creator" content="@rewiredimagine">
         <meta name="twitter:url" content="http://rewiredimagination.com{{page.url}}">
         <meta name="twitter:title" content="{{ page.title }}">
+
+{% if page.twdescr %}
+        <meta name="twitter:description" content="{{page.twdescr}}">
+{% else %}
         <meta name="twitter:description" content="{{ page.content | strip_html | xml_escape | truncate: 150 }}">
+{% endif %}
