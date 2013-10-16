@@ -1,0 +1,8 @@
+        <meta property="og:title" content="{{ page.title }}">
+        <meta property="og:type" content="website">
+    {% if page.image_og %}
+        <meta property="og:image" content="{{page.image_og}}">
+    {%else %}
+        <meta property="og:image" content="/css/img/rewiredimagionation.png">
+    {% endif %}
+        <meta property="org:url" content="http://rewiredimagination.com{{page.url}}">
