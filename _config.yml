@@ -1,3 +1,11 @@
 name: Rewired Imagination
 markdown: redcarpet
 pygments: true
+exclude:
+ - unicorn.rb
+ - README.md
+ - Procfile
+ - Gemfile
+ - Gemfile.lock
+ - config.ru
+ - vendor
